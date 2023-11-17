@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import UserDetails from './UserDetails'; // Assuming UserDetails component is in the same directory
+import UserDetails from './UserDetails'; 
 
 const AccountCreation = () => {
   const [username, setUsername] = useState('');
@@ -12,24 +12,21 @@ const AccountCreation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your account creation logic here
-    // For demonstration purposes, let's just log the user data
     const newUser = { username, password, email, phone };
     console.log('New User:', newUser);
 
-    // Set the account creation status to true
+    
     setAccountCreated(true);
-    // Store user data for displaying in UserDetails component
+
     setUserData(newUser);
   };
 
   const showForm = () => {
-    // Set the form visibility to true when the button is clicked
+    
     setFormVisible(true);
   };
 
   const showUserDetails = () => {
-    // Set the UserDetails visibility to true when the button is clicked
     setFormVisible(false);
     setAccountCreated(false);
   };
@@ -111,6 +108,26 @@ const AccountCreation = () => {
           )}
         </div>
       )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

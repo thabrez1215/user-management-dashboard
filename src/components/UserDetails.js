@@ -58,7 +58,7 @@ const UserDetails = ({ users }) => {
                 <th>Username</th>
                 <th>Email</th>
                 <th>Phone</th>
-                {/* Add other fields as needed */}
+               
               </tr>
             </thead>
             <tbody>
@@ -67,7 +67,7 @@ const UserDetails = ({ users }) => {
                   <td>{user.username}</td>
                   <td>{user.email}</td>
                   <td>{user.phone}</td>
-                  {/* Add other fields as needed */}
+                  
                 </tr>
               ))}
             </tbody>

@@ -24,7 +24,7 @@ const App = () => {
       .then(response => response.json())
       .then(data => {
         setUsers(data);
-        // Show UserDetails after adding a new user
+     
         setShowUserDetails(true);
       })
       .catch(error => console.error('Error:', error));
